@@ -1,0 +1,38 @@
+body {
+   color: #FFFFFF;
+}
+
+/*
+ * Better to use html for background instead of body
+ * since it will always be at least the height of the
+ * browser window.
+ *
+*/
+html {
+   /* TODO: 
+    * - Background image stretch to screen border
+    * - Load different background image for mobile
+    *
+   */
+   background: #674BB1 url("../images/bg-desktop.svg") no-repeat;
+   background-attachment: scroll;
+   /*background-size: 1440px auto;*/
+}
+
+h1 {
+   font-family: 'Poppins', sans-serif;
+}
+
+p {
+   font-family: 'Open Sans', sans-serif;
+   line-height: 2;
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
