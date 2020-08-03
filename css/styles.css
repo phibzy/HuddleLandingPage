@@ -32,14 +32,14 @@ html {
 @media (min-width: 100px) and (max-width: 899px) {
    html {
       background: #674BB1 url("../images/bg-mobile.svg") no-repeat;
-      background-size: cover;
+      /*background-size: cover;*/
    }
 }
 
 @media (min-width: 900px) {
    html {
       background: #674BB1 url("../images/bg-desktop.svg") no-repeat;
-      background-size: cover;
+      /*background-size: cover;*/
    }
 }
 
