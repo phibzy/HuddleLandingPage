@@ -10,6 +10,22 @@ footer {
    align-items: flex-end;
 }
 
+
+@media (min-width: 100px) and (max-width: 899px) {
+   html {
+      background: #674BB1 url("../images/bg-mobile.svg") no-repeat;
+      /*background-size: cover;*/
+   }
+}
+
+@media (min-width: 900px) {
+   html {
+      background: #674BB1 url("../images/bg-desktop.svg") no-repeat;
+      /*background-size: cover;*/
+   }
+}
+
+
 /*
  * Better to use html for background instead of body
  * since it will always be at least the height of the
@@ -28,21 +44,6 @@ html {
    /*height: 100%;*/
    /*background-size: 1440px auto;*/
 }
-
-@media (min-width: 100px) and (max-width: 899px) {
-   html {
-      background: #674BB1 url("../images/bg-mobile.svg") no-repeat;
-      /*background-size: cover;*/
-   }
-}
-
-@media (min-width: 900px) {
-   html {
-      background: #674BB1 url("../images/bg-desktop.svg") no-repeat;
-      /*background-size: cover;*/
-   }
-}
-
 
 h1 {
    font-family: 'Poppins', sans-serif;
