@@ -1,11 +1,13 @@
 body {
    color: #FFFFFF;
+   /*min-height: 100%;*/
    padding: 3rem 4rem;
-   /*width: 100%;*/
+   position: absolute; top: 0; left: 0; bottom: 0; right: 0;
+   /*height: 100%;*/
 }
 
 footer {
-   /*display: none;*/
+   align-items: flex-end;
 }
 
 /*
@@ -20,12 +22,27 @@ html {
     * - Load different background image for mobile
     *
    */
-   background: #674BB1 url("../images/bg-desktop.svg") no-repeat;
    /*background-attachment: scroll;*/
    /*display: flex;*/
    background-size: cover;
+   /*height: 100%;*/
    /*background-size: 1440px auto;*/
 }
+
+@media (min-width: 100px) {
+   html {
+      background: #674BB1 url("../images/bg-mobile.svg") no-repeat;
+      background-size: cover;
+   }
+}
+
+@media (min-width: 900px) {
+   html {
+      background: #674BB1 url("../images/bg-desktop.svg") no-repeat;
+      background-size: cover;
+   }
+}
+
 
 h1 {
    font-family: 'Poppins', sans-serif;
@@ -35,6 +52,7 @@ h1 {
 
 p {
    font-family: 'Open Sans', sans-serif;
+   font-size: 1.1rem;
    line-height: 2;
 }
 
@@ -62,7 +80,7 @@ p {
   font-size: 1rempx;
   background: #FFFFFF;
   margin: 1.5rem 0 auto 0;
-  padding: 20px 65px 20px 65px;
+  padding: 20px 65px;
   display: inline-block;
   text-decoration: none;
 }
@@ -81,6 +99,7 @@ p {
    /*align-items: center;*/
    display: flex;
    flex-wrap: wrap;
+   height: 40rem;
    /*justify-content: center;*/
    /*justify-content: space-between*/
 }
@@ -94,6 +113,7 @@ p {
 }
 
 .icon-row {
+   align-items: flex-end;
    display: flex;
    justify-content: flex-end;
    /*margin-top: 8rem;*/
@@ -104,11 +124,12 @@ p {
 }
 
 .landing-p {
-   width: 33rem;
+   width: 32rem;
 }
 
 .landing-text {
    flex-grow: 1;
+   /*justify-content: center;*/
    margin: 2rem 4rem;
    /*width: 28rem; */
 }
@@ -117,9 +138,33 @@ p {
    width: 53rem;
 }
 
+@media (min-width: 100px) and (max-width: 899px) {
+   .btn {
+      padding: 0.625rem 4.0625rem;
+   }
+
+   .landing-text {
+      text-align: center;
+      /*margin: 0 auto;*/
+   }
+
+   .landing-h1 {
+      margin: 1rem auto;
+   }
+   
+   .landing-p {
+      margin: 0 auto;
+   }
+
+   .mockup-img {
+      width: auto;
+   }
+}
+
 .social-logo {
    border: 0.05rem solid white;
    border-radius: 6rem;
+   display: flex;
    /*font-size: 7rem;*/
    margin: 0.5rem;
    padding: 0.5rem;
