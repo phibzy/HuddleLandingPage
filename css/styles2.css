@@ -9,9 +9,16 @@ body {
    background-color: hsl(257, 40%, 49%);
    color: white;
    font-family: 'Open Sans', sans-serif;
+   font-size: 1.3rem;
    min-height: 100vh;
    display: flex;
    align-items: center;
+   justify-content: center;
+}
+
+footer {
+   display: flex;
+   font-size: 0.7rem;
    justify-content: center;
 }
 
@@ -19,28 +26,100 @@ h1 {
    font-family: 'Poppins', sans-serif;
 }
 
-img {
-   max-width: 100%;
-}
-
 p {
    line-height: 2;
 }
 
+.btn {
+   background-color: white;
+   border: none;
+   border-radius: 3rem;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+   color: hsl(257, 40%, 49%);
+   font-size: 1rem; 
+   padding: 1rem 4rem;
+}
+
 .container {
    display: flex;
+   margin: 6.6rem 0 3rem 0;
+   /*justify-content: space-evenly;*/
+   /*flex-wrap: wrap;*/
 }
 
-.container > div {
-   flex: 1;
+.container > div:first-child {
+   flex: 0.6;
+   margin-right: 2rem;
 }
 
-.landing-text {
+.container > div:last-child {
+   flex: 0.4;
+   margin-left: 2rem;
+}
 
+.icon-list {
+   display: flex;
+   list-style-type: none;
+   padding: 0;
+   justify-content: flex-end;
+}
+
+.icon-list a {
+   border: 1.25px solid;
+   border-radius: 50%;
+   color: white;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   height: 3rem;
+   margin-left: 1rem;
+   text-decoration: none;
+   width: 3rem;
+}
+
+.mockup-img {
+   max-width: 100%;
+   width: 55rem;
+   /*margin-right: 10rem;*/
 }
 
 .whole-container {
    margin: auto;
    max-width: 100%;
-   width: 80rem;
+   width: 100rem;
+}
+
+/* Mobile view settings */
+@media screen and (max-width: 768px) {
+   body {
+      background-image: url('../images/bg-mobile.svg');
+      background-size: 100%;
+   }
+
+   .container {
+      display: flex;
+      flex-direction: column;
+      margin: 6.6rem 0 3rem 0;
+      /*justify-content: space-evenly;*/
+      /*flex-wrap: wrap;*/
+   }
+
+   .container > div:first-child {
+      flex: 1;
+      margin-right: 0;
+   }
+
+   .container > div:last-child {
+      flex: 1;
+      margin-left: 0;
+      text-align: center;
+   }
+
+   .icon-list {
+      justify-content: center;
+   }
+
+   .icon-list a {
+      margin: 0 0.5rem;
+   }
 }
