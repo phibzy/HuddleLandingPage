@@ -1,3 +1,8 @@
+* {
+   box-sizing: border-box;  
+}
+
+
 body {
    color: #FFFFFF;
    /*min-height: 100%;*/
@@ -41,6 +46,7 @@ html {
    /*background-attachment: scroll;*/
    /*display: flex;*/
    background-size: cover;
+   min-height: 100vh;
    /*height: 100%;*/
    /*background-size: 1440px auto;*/
 }

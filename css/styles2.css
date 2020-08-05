@@ -1,0 +1,46 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url('../images/bg-desktop.svg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: hsl(257, 40%, 49%);
+   color: white;
+   font-family: 'Open Sans', sans-serif;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+h1 {
+   font-family: 'Poppins', sans-serif;
+}
+
+img {
+   max-width: 100%;
+}
+
+p {
+   line-height: 2;
+}
+
+.container {
+   display: flex;
+}
+
+.container > div {
+   flex: 1;
+}
+
+.landing-text {
+
+}
+
+.whole-container {
+   margin: auto;
+   max-width: 100%;
+   width: 80rem;
+}

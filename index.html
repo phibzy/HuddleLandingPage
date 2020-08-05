@@ -3,31 +3,42 @@
    <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+     <!--<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> -->
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
      
      <title>Frontend Mentor | Huddle landing page with single introductory section</title>
      <script type="text/javascript" src="live.js"></script>
 
-     <link rel="stylesheet" href="./css/styles.css">
+     <link rel="stylesheet" href="./css/styles2.css">
    </head>
    <body>
+      <div class="whole-container">
+         <img class="huddle-logo" src="./images/logo.svg" alt="huddle-logo-img">
 
-      <img class="huddle-logo" src="./images/logo.svg" alt="huddle-logo-img">
+         <!-- Used to contain the image + other div with all text elements -->
+         <div class="container">
+            <!-- Do not use img as a flex element, it's super buggy. Wrap in div and use div as flex element instead -->
+            <div>
+               <img class="mockup-img" src="images/illustration-mockups.svg" alt="app-mockups">
+            </div>
 
-      <!-- Used to contain the image + other div with all text elements -->
-      <div class="container">
-         <img class="mockup-img" src="images/illustration-mockups.svg" alt="app-mockups">
 
+            <div class="landing-text">
+                 <h1 class="landing-h1">Build The Community Your Fans Will Love</h1>
+                 <p class="landing-p">
+                    Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+                    Create connections with your users as you engage in genuine discussion. 
+                 </p>
 
-         <div class="landing-text">
-              <h1 class="landing-h1">Build The Community Your Fans Will Love</h1>
-              <p class="landing-p">
-                 Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-                 Create connections with your users as you engage in genuine discussion. 
-              </p>
-
-              <a class="btn" >Register</a>
+                 <button class="btn" >Register</button>
+            </div>
+         </div>
+         <div class="icon-row">
+            <!-- try a ul here -->
+            <ion-icon class="social-logo fb-logo" name="logo-facebook"></ion-icon>
+            <ion-icon class="social-logo" name="logo-twitter"></ion-icon>
+            <ion-icon class="social-logo" name="logo-instagram"></ion-icon>
          </div>
       </div>
       <!-- TODO:
@@ -36,17 +47,12 @@
          - Background img stuff
          - Mobile view
       -->
-      <div class="icon-row">
-         <ion-icon class="social-logo fb-logo" name="logo-facebook"></ion-icon>
-         <ion-icon class="social-logo" name="logo-twitter"></ion-icon>
-         <ion-icon class="social-logo" name="logo-instagram"></ion-icon>
-      </div>
    </body>
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Chris Phibbs</a>.
-    </p>
-  </footer>
+  <!--<footer>-->
+    <!--<p class="attribution">-->
+      <!--Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
+      <!--Coded by <a href="#">Chris Phibbs</a>.-->
+    <!--</p>-->
+  <!--</footer>-->
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </html>
