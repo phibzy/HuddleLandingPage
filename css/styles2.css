@@ -14,7 +14,7 @@ body {
    font-size: 1.3rem;
    justify-content: center;
    min-height: 100vh;
-   padding: 4rem;
+   padding: 50px;
 }
 
 footer {
@@ -39,6 +39,12 @@ p {
    color: hsl(257, 40%, 49%);
    font-size: 1rem; 
    padding: 1rem 4rem;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  cursor: pointer;
+  /*font-weight: bold;*/
 }
 
 .container {
@@ -84,6 +90,11 @@ p {
    /*margin-right: 10rem;*/
 }
 
+.social-icon:hover {
+   border-color: #3cb0fd;
+   border-width: 2px;
+}
+
 .whole-container {
    margin: auto;
    max-width: 100%;
@@ -91,7 +102,7 @@ p {
 }
 
 /* Mobile view settings */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
    body {
       background-image: url('../images/bg-mobile.svg');
       background-size: 100%;
@@ -127,4 +138,5 @@ p {
    .icon-list a {
       margin: 0 0.5rem;
    }
+
 }
